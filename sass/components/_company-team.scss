@@ -1,0 +1,50 @@
+.section--otherbackground {
+    background-color: $secondary-background-color;
+ }
+
+.team {
+    display: flex;
+
+&__title {
+    margin-bottom: 10px;
+     
+    color: $title-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+&__text {
+    margin-top:0;
+  
+    color: $main-text-color;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+}
+
+.team__item {
+    width: 270px;
+    border-radius: 0px 0px 4px 4px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px 
+    rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+&:not(:first-child) {
+margin-left: 30px;
+}
+}
+
+.team-box {
+    text-align: center;
+
+    &--nopadding {
+    padding-top: 30px;        
+    padding-bottom: 30px;
+}
+}
+

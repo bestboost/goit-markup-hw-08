@@ -1,0 +1,35 @@
+.hero__button {
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
+
+    color: $secondary-text-color;
+    background-color: $accent-color;
+    font-family: inherit;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+
+    border-radius: 4px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.footer-form__call {
+    @extend .hero__button;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+   
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.submit-button {
+    @extend .hero__button;
+    display: block;
+  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

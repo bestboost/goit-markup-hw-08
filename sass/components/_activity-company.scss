@@ -1,0 +1,37 @@
+.section--nopadding {   
+    padding-top: 0; 
+ }
+
+.activity {
+    display: flex;
+
+&__titel {
+    position: absolute;
+    bottom: 27px;
+    transform: translate( 50%); 
+
+    color: $secondary-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+ } 
+}
+
+.activity__item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.activity__thumb {
+    position: relative;
+
+&::before {
+   position: absolute;
+   bottom: 0;
+   display: inline-block;
+   content: '';
+   width: 370px;
+   height: 70px;
+   background-color: rgba(47, 48, 58, 0.8);
+}
+}
