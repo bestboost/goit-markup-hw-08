@@ -4,11 +4,16 @@ body {
 }
 
 .container {
-  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 .section {
@@ -145,8 +150,6 @@ label {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
-  height: 400px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Hero_bg_img.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Hero_bg_img.jpg");
   background-repeat: no-repeat;
@@ -267,7 +270,6 @@ label {
 }
 
 .team__item {
-  width: 450px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -455,7 +457,6 @@ label {
   margin-bottom: 20px;
   padding-left: 16px;
   padding-right: 16px;
-  width: 450px;
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
@@ -588,8 +589,6 @@ label {
 }
 
 .form-field__label {
-  display: block;
-  margin-bottom: -4px;
   color: #757575;
   font-size: 12px;
   line-height: 14px;
@@ -858,7 +857,7 @@ label {
   line-height: 1.6;
 }
 
-.hero__button, .footer-form__call {
+.hero__button, .footer-form__call, .submit-button {
   padding: 10px 32px;
   min-width: 200px;
   height: 50px;
@@ -878,6 +877,11 @@ label {
 }
 
 .footer-form__call {
-  margin-top: 4px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */

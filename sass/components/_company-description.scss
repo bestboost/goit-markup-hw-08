@@ -23,7 +23,6 @@
 }
 
 .description__item {
-    width: 450px;
     // width: 270px;
 
 &:not(:last-child) {
@@ -40,6 +39,8 @@
     align-items: center;
     justify-content: center;
     height: 120px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
 
     background-color: $secondary-background-color;

@@ -20,14 +20,15 @@
 
 .footer-form__call {
     @extend .hero__button;
-    margin-top: 4px;      // mobile
-    // display: inline-flex;
+   
+
+    display: inline-flex;
     // justify-content: center;
-    // align-items: center;
+    align-items: center;
     // margin-left: 8px;
 }
 
 .submit-button {
-    // @extend .hero__button;
+    @extend .hero__button;
     // display: block;
 }

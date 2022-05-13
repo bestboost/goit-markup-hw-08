@@ -33,8 +33,8 @@
     position: relative;
     
 &__label {
-    display: block;
-    margin-bottom: -4px;
+    // display: block;   не работает
+    // margin-bottom: -4px;
     color: $main-text-color;
     font-size: 12px;
     line-height: 14px;

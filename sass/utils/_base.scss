@@ -4,13 +4,15 @@ body {
 }
 
 .container {
-    width: 480px;
-    // height: 796px; mobil
     // width: 1200px; desktop
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
 
 }
 
