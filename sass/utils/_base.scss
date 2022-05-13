@@ -4,7 +4,9 @@ body {
 }
 
 .container {
-    width: 1200px;
+    width: 480px;
+    // height: 796px; mobil
+    // width: 1200px; desktop
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -13,18 +15,22 @@ body {
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
 
 
  &__title {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    // margin-bottom: 50px;
 
     color: $title-color;
 
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
+    // font-size: 36px;
     line-height: 1.16;
     text-align: center;
  }
