@@ -5,11 +5,13 @@
 
 .contacts--margin {
     margin-top: 20px;
+    margin-bottom: 60px;     // mobile 
 }
 
 .footer-links--indents {
     padding: 0;
-    margin-left: 70px;
+    margin-bottom: 60px;    // mobile 
+    // margin-left: 70px;
 }
     
 
@@ -19,13 +21,14 @@
 }
 
 .container__footer {
-    display: flex;
-    align-items: baseline;
+    text-align: center;
+    // display: flex;
+    // align-items: baseline;
 }
 
-.footer-item {
-    flex-grow: 1;
-}
+// .footer-item {
+//     flex-grow: 1;
+// }
 
 
 // footer-contacts
@@ -44,25 +47,26 @@
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
-    &--color:hover,
-    &--color:focus {
-        color: $accent-color;
-    }
+//     &--color:hover,
+//     &--color:focus {
+//         color: $accent-color;
+//     }
   
-&:hover,
-&:focus {
-   color: $accent-color;
-}
+// &:hover,
+// &:focus {
+//    color: $accent-color;
+// }
 
 &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    // margin-bottom: 9px;
 }
 }
 
 // footer-links-text
 .footer-links {
-    display: block ;
-    align-items: center;
+    // display: block ;
+    // align-items: center;
    
     &__text {
         margin-bottom: 20px;
@@ -74,16 +78,18 @@
 }
 
 
-
 /* call to action */
 
 .footer-form {
-    // перенести маржини
-    margin-left: 93px;
-    width: 570px;
+    // width: 570px;
+
+    // &--margin {
+    //     margin-left: 93px;
+    // }
 
     &__field {
-        display: flex;
+        // display: flex;
+        margin: 0;  // mobile
     }
 
 &__text {
@@ -103,9 +109,12 @@
 
 
 .footer-form__input {
+    display: block;      // mobile
+    margin-bottom: 20px;
     padding-left: 16px;
     padding-right: 16px;
-    width: 358px;
+    width: 450px;
+    // width: 358px;
     height: 50px;
 
     color: $footer-color;

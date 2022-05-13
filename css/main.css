@@ -385,11 +385,12 @@ label {
 
 .contacts--margin {
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .footer-links--indents {
   padding: 0;
-  margin-left: 70px;
+  margin-bottom: 60px;
 }
 
 .footer {
@@ -398,18 +399,7 @@ label {
 }
 
 .container__footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-.footer-item {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  text-align: center;
 }
 
 .contacts {
@@ -430,23 +420,8 @@ label {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__address--color:hover, .contacts__address--color:focus {
-  color: #2196F3;
-}
-
-.contacts__address:hover, .contacts__address:focus {
-  color: #2196F3;
-}
-
 .contacts__address:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.footer-links {
-  display: block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-bottom: 8px;
 }
 
 .footer-links__text {
@@ -458,15 +433,8 @@ label {
 }
 
 /* call to action */
-.footer-form {
-  margin-left: 93px;
-  width: 570px;
-}
-
 .footer-form__field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin: 0;
 }
 
 .footer-form__text {
@@ -483,9 +451,11 @@ label {
 }
 
 .footer-form__input {
+  display: block;
+  margin-bottom: 20px;
   padding-left: 16px;
   padding-right: 16px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
@@ -905,5 +875,9 @@ label {
   border-radius: 4px;
   border: transparent;
   cursor: pointer;
+}
+
+.footer-form__call {
+  margin-top: 4px;
 }
 /*# sourceMappingURL=main.css.map */
