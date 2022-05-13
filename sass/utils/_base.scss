@@ -4,7 +4,6 @@ body {
 }
 
 .container {
-    // width: 1200px; desktop
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -14,6 +13,13 @@ body {
         width: 480px;
     }
 
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 .section {
