@@ -96,31 +96,6 @@ textarea {
   line-height: 1.2;
 }
 
-.menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0;
-  margin: 0;
-  border: none;
-  background-color: transparent;
-  font-family: inherit;
-  font-size: 0;
-  cursor: pointer;
-}
-
-.menu-button .icon-close {
-  display: none;
-}
-
-.menu-buton.is-open .icon-close {
-  display: block;
-}
-
-.menu-buton.is-open .icon-menu {
-  display: none;
-}
-
 .site-nav__link {
   display: block;
   color: #212121;
@@ -150,6 +125,51 @@ textarea {
 
 .logo__part--color {
   color: #FFFFFF;
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.page-header {
+  position: relative;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 48px 40px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.menu-container.is-open {
+  display: block;
 }
 
 .contacts-nav {
