@@ -30,5 +30,13 @@
 
 .submit-button {
     @extend .hero__button;
-    // display: block;
+    display: block;
+  
+
+    &__position {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }     
 }

@@ -1,3 +1,28 @@
+.header-social {        //mobile
+     display: flex;
+  
+// &__item {
+    
+// } 
+
+&__line {
+    width: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+   
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+}
+
+&__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+
+    color: $accent-color;
+}
+}
+
 .social {
     display: flex;
     align-items: center;
