@@ -32,6 +32,29 @@
 // }
 // }
 
+.menu-button {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    border: none;
+
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.menu-button .icon-close {
+    display: none;
+}   
+
+.menu-buton.is-open .icon-close {
+    display: block;
+}
+.menu-buton.is-open .icon-menu {
+    display: none;
+}
+
 .site-nav__link {
     display: block;
     // padding-top: 32px;
