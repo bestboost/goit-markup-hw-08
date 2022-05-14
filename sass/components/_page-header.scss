@@ -3,35 +3,105 @@
     border-bottom: 1px solid #ECECEC;
 }
 
-// .container__page-header {
-//     display: flex;
-// }
+.container__page-header {
+
+    @media screen and (min-width: 768px) {
+    display: flex;
+}
+}
+
+.menu-button { 
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    border: none;
+
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 0;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-button .icon-close {
+    display: none;
+      
+}
+
+.menu-button.is-open .icon-close {
+    display: block;
+}
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+
+
+.page-header {
+    position: relative;
+}
+.menu-container {
+    position:absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 48px 40px;
+
+    background-color: $secondary-text-color;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+     0px 2px 4px rgba(0, 0, 0, 0.08),
+     0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    &.is-open {
+        display: block;
+    } 
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
 
 .main-nav {
-    // display: flex;
-    // align-items: center;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.2;
-    // text-align: center;      ????
-    // font-weight: 500;
-    // font-size: 14px;
-    // line-height: 1.1;
+    
+    @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        height: 60px;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.2;
+    }    
+      
+    @media screen and (min-width: 768px) {
+       font-size: 14px;
+       line-height: 1.1;
+}
 }
 
 // navigation
-// .site-nav {
-//     // display: flex;
+.site-nav {
+
+    @media screen and (min-width: 768px) {
+    display: flex;
+
+&__item:first-child {
+   margin-left: 88px;
+}    
+   
+&__item:not(:first-child) {
+    margin-left: 50px;
+}
+}
+
 
 // &__item:first-child {
-//    margin-left: 93px;
-// }    
-   
-// &__item:not(:first-child) {
-//     margin-left: 50px;
-// }
-// }
-
+//     margin-left: 93px;
+//  }  
+}
 .site-nav__link {
     display: block;
     // padding-top: 32px;
