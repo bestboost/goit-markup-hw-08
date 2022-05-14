@@ -445,10 +445,6 @@ label {
 }
 
 /* call to action */
-.footer-form__field {
-  margin: 0;
-}
-
 .footer-form__text {
   margin-bottom: 20px;
   color: #FFFFFF;
@@ -464,10 +460,10 @@ label {
 
 .footer-form__input {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   padding-left: 16px;
   padding-right: 16px;
-  width: calc(100% - 15px);
+  width: 100%;
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
@@ -741,7 +737,7 @@ label {
       flex-wrap: wrap;
 }
 
-.portfolio-filter--margin-bottom {
+.portfolio-filter--margin {
   margin-bottom: 40px;
 }
 
