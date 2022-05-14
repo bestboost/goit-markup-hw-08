@@ -352,6 +352,16 @@ label {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 480px) {
+  .clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .clients__icon {
   fill: currentColor;
 }
@@ -381,13 +391,29 @@ label {
   border: 1px solid #2196F3;
 }
 
-.clients__list {
+.clients__item {
+  margin-left: auto;
+  margin-right: auto;
   width: 210px;
   height: 92px;
 }
 
-.clients__list:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .clients__item:nth-child(2n) {
+    margin-left: 15px;
+  }
+  .clients__item:nth-child(2n + 1) {
+    margin-right: 15px;
+  }
+  .clients__item:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .clients__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .footer--padding {
