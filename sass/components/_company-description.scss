@@ -1,4 +1,8 @@
 .description {
+    @media screen and (min-width: 768px) {
+        display: flex;      
+        flex-wrap: wrap; 
+    }
     // display: flex;
 
 &__headline {
@@ -8,9 +12,12 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
-    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 &__text {
@@ -23,11 +30,19 @@
 }
 
 .description__item {
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;    
+    }
+
+    
     // width: 270px;
 
-&:not(:last-child) {
-    margin-bottom: 30px;
-}
+
 
 // &:not(:first-child) {
 //     margin-left: 30px;

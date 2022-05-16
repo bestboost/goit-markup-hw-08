@@ -42,7 +42,7 @@
      margin-right: auto;
       width: 210px;
       height: 92px;
-
+      
     @media screen and (min-width: 480px) {
                
         &:nth-child(2n) {
@@ -61,8 +61,12 @@
     @media screen and (max-width: 479px)    {
         &:not(:last-child) {
         margin-bottom: 30px;
-}
-}
+        }
+    }
+
+    @media screen and (min-width: 768px)    {
+        width: 226px;
+    }
     // width: 170px;
     // height: 90px;
 
