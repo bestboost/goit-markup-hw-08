@@ -1,21 +1,18 @@
 .contacts-nav {
-    // display: flex;
-    // align-items: center;
-    color: $main-text-color;
+       color: $main-text-color;
 
     @media screen and (min-width: 768px) {
-      &__link:not(:last-child) {
+        margin-left: 84px;
+
+      &__item:not(:last-child) {
         margin-bottom: 10px;
       }
     }  
 
-
-
-// &__item:not(:last-of-type) {
-//     margin-left: 295px;
-//     margin-right: 30px;
-// }   
-
+    @media screen and (min-width: 1200px) {
+        display: flex;
+      
+    }
 
 &__icon {
 
@@ -30,12 +27,26 @@
 
     @media screen and (min-width: 1200px) {
      margin-right: 10px;
-    fill: currentColor;
+     fill: currentColor;
     }
+    
 }
 }
 
-.contacts-nav__link {
+
+.contacts-nav__item:not(:last-of-type) {
+
+    @media screen and (min-width: 1200px) {
+       margin-left: 295px;
+       margin-right: 30px;
+     }
+}   
+
+
+
+.contacts-nav__link {  
+    color: $main-text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
     @media screen and (max-width: 767px) {
     font-weight: 500;
@@ -53,15 +64,12 @@
         font-size: 12px;
     }
 
-    // display: flex;
-    // align-items: center;
-    // font-size: 14px;
-    // line-height: 1.1;
-    
-    color: $main-text-color;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 1.1;
+    }
 
 &:hover,
 &:focus {

@@ -5,18 +5,23 @@
     margin-right: auto;
     padding-top: 118px;
     padding-bottom: 118px;
-    // padding-top: 200px;
-    // padding-bottom: 200px;
+ 
     // background hero Overlay
     // max-width: 480px;            мобильная
     // height: 400px;                  версия
-    // max-width: 1600px;
-    // height: 600px;
+    
     background-image: $hero-background-gradient;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
+    @media screen and (min-width: 1200px) {
+        // background hero Overlay
+         padding-top: 200px;
+         padding-bottom: 200px;
+         max-width: 1600px;
+         height: 600px;
+    }
 
 &__title { 
     margin-top: 0px;
@@ -26,10 +31,13 @@
     font-weight: 900;
     font-size: 26px;
     line-height: 1.6;
-    // font-size: 44px;
-    // line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+          font-size: 44px;
+          line-height: 1.36;
+    }
 }
 }
 
