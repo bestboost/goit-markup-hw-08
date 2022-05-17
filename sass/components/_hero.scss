@@ -5,25 +5,47 @@
     margin-right: auto;
     padding-top: 118px;
     padding-bottom: 118px;
- 
+     
     // background hero Overlay
-    // max-width: 480px;            мобильная
-    // height: 400px;                  версия
-    
-    background-image: $hero-background-gradient;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+    background-image: $hero-background-gradient, url('../../images/HeroMob.jpg');
+   
+    @media (min-device-pixel-ratio: 2),
+           (min-resolution: 192dpi),
+           (min-resolution: 2dppx) {
+            background-image: $hero-background-gradient, url('../../images/HeroMob@2x.jpg');
+           }
+        
+    @media screen and (min-width: 768px) {
+        background-image: $hero-background-gradient, url('../../images/HeroTabl.jpg');
+   
+    @media (min-device-pixel-ratio: 2),
+           (min-resolution: 192dpi),
+           (min-resolution: 2dppx) {
+            background-image: $hero-background-gradient, url('../../images/HeroTabl@2x.jpg');
+           }
+        }    
+   
     @media screen and (min-width: 1200px) {
-        // background hero Overlay
          padding-top: 200px;
          padding-bottom: 200px;
          max-width: 1600px;
          height: 600px;
+
+         background-image: $hero-background-gradient, url('../../images/HeroDesk.jpg');
+   
+        @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                 background-image: $hero-background-gradient, url('../../images/HeroDesk@2x.jpg');
+                }
+         } 
     }
 
-&__title { 
+
+.hero__title { 
     margin-top: 0px;
     margin-bottom: 30px;
 
@@ -39,5 +61,6 @@
           line-height: 1.36;
     }
 }
-}
+
+
 
