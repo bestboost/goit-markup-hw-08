@@ -479,6 +479,12 @@ textarea {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 1199px) {
+  .section__activity {
+    display: none;
+  }
+}
+
 .section--nopadding {
   padding-top: 0;
 }
