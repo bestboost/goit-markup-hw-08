@@ -1,9 +1,9 @@
 .contacts-nav {
        color: $main-text-color;
 
-    @media screen and (min-width: 768px) {
+       @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-left: 84px;
-
+    
       &__item:not(:last-child) {
         margin-bottom: 10px;
       }

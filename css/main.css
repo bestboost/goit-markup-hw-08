@@ -3,6 +3,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -33,6 +39,13 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .section__title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -41,6 +54,13 @@ body {
   font-size: 28px;
   line-height: 1.16;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .activity {
@@ -269,7 +289,7 @@ textarea {
   color: #757575;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-nav {
     margin-left: 84px;
   }
