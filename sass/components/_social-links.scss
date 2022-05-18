@@ -63,15 +63,15 @@
     background-color: #44454E;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-// &:hover,
-// &:focus  {
-//     background-color: $accent-color;
-// }
-// &:hover,
-// &:focus  {
-//     color: $secondary-text-color;
-//     background-color: $accent-color;
-// }
+&:hover,
+&:focus  {
+    background-color: $accent-color;
+}
+&:hover,
+&:focus  {
+    color: $secondary-text-color;
+    background-color: $accent-color;
+}
 
 }
 
