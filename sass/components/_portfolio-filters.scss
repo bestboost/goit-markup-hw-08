@@ -1,7 +1,8 @@
 .portfolio-filter {
-    
     display:flex;
     flex-wrap: wrap;
+    margin-left: -8px;
+
 
     @media screen and (min-width: 768px) {
         justify-content: center;
@@ -19,7 +20,7 @@
     }
 }
 }
-.portfolio-filter__item:not(:first-child) {
+.portfolio-filter__item {
     margin-left: 8px;
 }
 

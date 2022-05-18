@@ -2,17 +2,24 @@
 
     @media screen and (min-width: 480px) {
         display: flex;      
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
+
     }
-  
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+   
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
 
 &__icon {
-    // align-items: center;
-    fill: currentColor;
+      fill: currentColor;
 }
+
+    @media screen and (min-width: 1200px) {
+          align-items: center;
+    }
+
 }
 
 .clients__link {
@@ -40,37 +47,26 @@
 .clients__item {
      margin-left: auto;
      margin-right: auto;
-      width: 210px;
-      height: 92px;
+     width: 210px;
+     height: 92px;
       
     @media screen and (min-width: 480px) {
-               
-        &:nth-child(2n) {
-            margin-left: 15px;
-        }
-
-        &:nth-child(2n + 1) {
-            margin-right: 15px;
-        }
-
-        &:nth-child(-n + 4) {
-            margin-bottom: 30px;
-        }
-    }
-
-    @media screen and (max-width: 479px)    {
-        &:not(:last-child) {
-        margin-bottom: 30px;
-        }
-    }
-
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+    }           
+    
     @media screen and (min-width: 768px)    {
-        width: 226px;
+        width: calc((100% - 3 * 30px) / 3);
+        margin: 15px;
     }
-    // width: 170px;
-    // height: 90px;
 
-// &:not(:last-child) {
-//     margin-right: 30px;
-// }
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+        height: 90px;
+        margin: 0;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
 }

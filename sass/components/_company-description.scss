@@ -1,9 +1,13 @@
 .description {
+
     @media screen and (min-width: 768px) {
         display: flex;      
         flex-wrap: wrap; 
     }
-    // display: flex;
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
 
 &__headline {
     margin-bottom: 10px;
@@ -36,17 +40,18 @@
     }
 
     @media screen and (min-width: 768px) {
-        width: 354px;    
+        width: 354px;
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;    
     }
 
-    
-    // width: 270px;
+    @media screen and (min-width: 1200px) {
+         width: 270px;
 
-
-
-// &:not(:first-child) {
-//     margin-left: 30px;
-// }
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
+    }
 }
 
 .box__icon {
