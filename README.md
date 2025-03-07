@@ -21,4 +21,4 @@ WebStudio - це односторінковий сайт із адаптивни
 ## Установка
 1. Клонуйте репозиторій:
    ```bash
-   git clone <твоє-посилання>
+   git clone https://github.com/bestboost/goit-markup-hw-08
